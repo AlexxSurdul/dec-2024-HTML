@@ -1,0 +1,5 @@
+.btn-primary{
+    background-color: rgba(128, 128, 128, 0.81);
+    /*стиль може не змінитись, якщо в bootstrap присутній параметр !important*/
+
+}

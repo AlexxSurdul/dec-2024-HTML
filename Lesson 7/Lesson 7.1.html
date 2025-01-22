@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .item{
+        width: 200px;
+        height: 200px;
+        background-color: lightcoral;
+        /*position: static;*/
+        /*static стандартне позиціонування,
+        у ньому не можна використовувати нашаровування
+        і рухати об'єкти по осі z - "z-index:"*/
+        position: relative;
+        /*relative відносне позиціонування*/
+        top: -80px; /*можна пересовувати об'єкт відносно його стандартної позиції*/
+        left: 100px;
+        z-index: -1;
+      }
+    </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores commodi dignissimos distinctio est
+    explicabo illum, impedit ipsa laboriosam maiores nobis perspiciatis porro quae repellendus, sapiente similique sit
+    veniam voluptatum.</p>
+<div class="item"></div>
+</body>
+</html>

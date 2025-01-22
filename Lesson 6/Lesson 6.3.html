@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /*псевдоклас це можливість застилізувати елемент на основі його якогось стану,
+    наприклад наведення для hover*/
+    /*псевдоелемент дозволяє застилізувати якусь частинку елемента або додати якийсь додактвий вміст*/
+    div :first-child{
+      color: coral;
+    } /*псевдоклас який стилізує перший дочірній елемент*/
+    div p::first-letter {
+      color: blueviolet;
+      font-size: large;
+    } /*псевдоелемент вказується через :: і стилізує вказану частину елемента
+    наприклад першу літеру*/
+    div p::first-line{
+      font-style: italic;
+      /*color: cyan;*/
+    } /*псевдоелемент вказується через :: і стилізує вказану частину елемента
+    наприклад першу лінію*/
+    div :last-child{
+      color: blue;
+    }
+    div p:last-of-type{
+      color: red;
+    }
+    ul li:nth-child(3n){
+      color: gold;
+    } /* n - кожен компонент
+    2n - кожен другий компонент
+    2n+6 - кожен другий починаючи з шостого
+    odd - кожен непарний
+    even - кожен парний
+    nth-last-child - все те саме але починаючи з останнього елемента
+    */
+  </style>
+</head>
+<body>
+<div>
+  <p>Lorem ipsum dolor sit.</p>
+  <p>Quae quisquam recusandae sapiente.</p>
+  <p>Deleniti fugiat nisi sed.</p>
+  <p>Ipsum iure qui quia.</p>
+  <p>Doloremque libero optio voluptatem.</p>
+  <p>Aliquam excepturi reprehenderit sed?</p>
+  <p>Accusamus eveniet minus temporibus.</p>
+  <p>Distinctio dolor provident quisquam.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur assumenda at atque eveniet minus non
+    perspiciatis quis quos velit.</p>
+  <p>Consequatur consequuntur, deleniti dolore dolores doloribus eaque illum iure odio officiis perferendis, possimus
+    quisquam quos repellendus repudiandae tempora temporibus voluptatibus!</p>
+  <p>Aliquam aspernatur consequuntur culpa dignissimos, eaque earum excepturi harum, in libero nesciunt, pariatur
+    perferendis porro quod repudiandae sit vel voluptas?</p>
+  <span>Lorem.</span><span>Facilis.</span><span>Nemo.</span><span>Mollitia!</span>
+</div>
+<ul>
+  <li>Lorem ipsum dolor.</li>
+  <li>Aliquam, fugiat, soluta!</li>
+  <li>Dignissimos, ducimus maiores.</li>
+  <li>Deserunt, earum, voluptas!</li>
+  <li>Exercitationem possimus, repellat!</li>
+  <li>Doloremque, recusandae, voluptatum!</li>
+  <li>Optio pariatur, similique.</li>
+  <li>Asperiores, possimus, unde?</li>
+  <li>Amet, fugiat voluptate!</li>
+  <li>Non, pariatur rem.</li>
+  <li>Possimus, repudiandae tempore.</li>
+  <li>Aliquam, doloribus inventore.</li>
+  <li>Praesentium, quo, ut!</li>
+  <li>Exercitationem, numquam sit!</li>
+  <li>Ex recusandae, sapiente.</li>
+</ul>
+</body>
+</html>

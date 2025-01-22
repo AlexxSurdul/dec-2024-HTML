@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer_box {
+    font-family: 'Orbitron', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    margin: 10px;
+}
+
+header div {
+    text-align: center;
+}
+
+.active_link {
+    color: #1c4b35;
+}
+
+main {
+    height: 90vh;
+    background-image: url("n.jpg");
+    background-size: cover;
+}
+
+.home-main-section {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.home-main-section h1 {
+    font-size: 100px;
+    letter-spacing: 40px;
+}
+
+.button-book-now {
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    /*color: white;*/
+    border: none;
+    transition: 3s;
+    margin-top: 20px;
+}
+.button-book-now a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+    color: #4d6053;
+    transition: 1s;
+}
+
+.about-main-section {
+    width: 40%;
+    padding: 30px;
+}
+
+.about-main-section h2 {
+    margin-bottom: 50px;
+}
+
+.contact-main-section {
+    width: 60%;
+    padding: 30px;
+}
+
+.contact-main-section h2, ul {
+    margin-bottom: 50px;
+}
+
+.service-main-section {
+    width: 60%;
+    padding: 30px;
+}
+
+.service-main-section h2, ul {
+    margin-bottom: 50px;
+}
+
+.service-main-section ul {
+    margin-top: 20px;
+}
+
+.blog-main-section {
+    width: 60%;
+    padding: 30px;
+}
+
+.blog-main-section h2, ul {
+    margin-bottom: 50px;
+}
+
+.blog-main-section ul {
+    margin-top: 20px;
+}
+
+.location-main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.location-main-section h2 {
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.location-main-section p, img {
+    margin-bottom: 20px;
+}
+
+.location-main-section img {
+    width: 70%;
+}
+
+.location-box-top {
+    width: 100%;
+}
+
+.location-box {
+    display: flex;
+    justify-content: center;
+}

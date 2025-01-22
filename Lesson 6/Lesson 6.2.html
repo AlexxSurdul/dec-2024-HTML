@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      h1+p{
+        color: chocolate;
+      } /* через + ми стилізуємо наступний селектор
+      параграф після h1*/
+      h1~p{
+        color: blueviolet;
+      } /* через ~ ми стилізуємо наступні споріднені селектори
+      тут всі параграфи після h1*/
+      div p{
+        color: blue;
+      }
+      div p span{
+        color: green;
+      }
+      /*------------------*/
+      div>p>span{
+        color: red;
+      } /*через > ми стилізуємо дочірні селектори
+      вказувати тільки прямі нащадки по порядку*/
+      div>div>p{
+        color: #e2f442;
+      }
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<div>
+  <p>Lorem ipsum dolor sit.</p>
+  <p>Earum eos quas qui?</p>
+  <p>Atque illo quidem repellendus?</p>
+  <div>
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+    <p>Lorem ipsum dolor.</p>
+  </div>
+  <p>Ad <span>quasi quo voluptatibus</span>!</p>
+  <p>Consequuntur dolorum eaque mollitia?</p>
+  <p>Aspernatur maxime odio tempore.</p>
+</div>
+</body>
+</html>

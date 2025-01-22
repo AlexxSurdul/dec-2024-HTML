@@ -1,0 +1,45 @@
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+
+    main {
+        height: 60vh;
+    }
+
+    aside, header, footer {
+        height: 10vh;
+    }
+
+    section {
+        display: flex;
+        height: 10vh;
+        background: blueviolet;
+    }
+
+    header p::after {
+        content: "mobile";
+        color: blue;
+    }
+
+
+    header p {
+        color: #932323;
+    }
+
+    main {
+        font-size: 2em;
+    }
+
+    aside, footer {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,21 @@
+/*font-family: "Plus Jakarta Sans", serif;*/
+
+
+:root {
+    --White: #FFFFFE;
+    --Light-Grey-1: #EFF0F3;
+    --Light-Grey-2: #E4E5E9;
+    --Grey: #C0C0C0;
+    --Dark-Grey: #9A9494;
+    --Black: #2B2C34;
+    --Blue: #6246EA;
+}
+
+.general-wrapper{
+    width: 1440px;
+    height: 4792px;
+    margin: 0 auto;
+    background: #FFFFFE;
+    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.05);
+
+}

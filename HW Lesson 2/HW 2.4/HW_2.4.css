@@ -1,0 +1,34 @@
+.outer_box{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fontbox {
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+p{
+    font-weight: 600;
+}
+.rubik p{
+    font-family: "Rubik Pixels", serif;
+}
+.Sedgwick p{
+    font-family: "Sedgwick Ave Display", serif;
+}
+.Dancing p{
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+}
+.Fjalla p{
+    font-family: "Fjalla One", serif;
+}
+.Indie p{
+    font-family: "Indie Flower", serif;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        form {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form sup {
+            color: red;
+        }
+        textarea{
+            resize: none;
+        }
+        .form-reg{
+            padding: 20px;
+            border: 3px solid lightcoral;
+            border-radius: 20px;
+        }
+        input[type="text"]{
+            background-color: rgba(211, 211, 211, 0.51);
+            border: 2px solid lightblue;
+            color: #304c71;
+        }
+        input[type="text"]::placeholder{
+            color: #8a2be2;
+        }
+        input[type="text"]:focus{
+            outline: 2px solid red;
+        }/*можна редагувати рамку яка з'являється при активації поля вводу - outline через псевдоклас focus*/
+    </style>
+</head>
+<body>
+<form class="form-reg">
+    <label for="name">enter your name</label>
+    <input type="text" name="name" id="name" placeholder="name" required><sup>*</sup>
+
+    <label for="age">enter your age</label>
+    <input type="number" name="age" id="age" placeholder="years" min="16" max="99">
+
+    <label for="email">enter your email</label>
+    <input type="email" name="login" id="email" placeholder="example@gmail.com" required><sup>*</sup>
+
+    <label for="password"> enter your password</label>
+    <input type="password" name="password" id="password" placeholder="password" required><sup>*</sup>
+
+    <input type="time">
+    <input type="file">
+    <input type="color">
+
+    <label>Gender</label>
+    <label><input type="radio" name="Gender" value="male"> Male</label>
+    <label><input type="radio" name="Gender" value="female"> Female</label>
+<!--    лейбл радіобатон об'єднується між собою для того, щоб можна було обрати лише один варіант, для цього треба вказати однаковий нейм-->
+<!--    щоб відправити якесь значення на сервер треба до лейбла додати параметр value-->
+    <label>
+        <input type="checkbox" name="subscribe"> Subscribe to news
+    </label>
+
+    <label for="country"> Country</label>
+    <select name="country" id="country">
+
+        <option value="">Choose your country</option>
+        <option value="ukraine">Ukraine</option>
+        <option value="non-ukraine">non-Ukraine</option>
+    </select>
+
+    <label for="phone-model">Phone model</label>
+    <select name="phone-model" id="phone-model">
+        <optgroup label="Apple">
+            <option value="x">iPhone X</option>
+            <option value="xr">iPhone XR</option>
+            <option value="xl">iPhone XL</option>
+        </optgroup>
+        <optgroup label="Samsung">
+            <option value="s24">S24</option>
+            <option value="s24+">S24+</option>
+            <option value="s24ultra">S24 Ultra</option>
+        </optgroup>
+    </select>
+
+    <label for="comment"> Write your comment</label>
+    <textarea id="comment" rows="5" placeholder="min 10" cols="50"></textarea>
+<!--    rows - кількість рядків які відображаються по замовчуванню, cols - кількість символів по замовчування
+можна вказати в стилізації параметр resize: none і цей блок не можна буде ресайзити-->
+
+    <div>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </div>
+
+
+</form>
+</body>
+</html>

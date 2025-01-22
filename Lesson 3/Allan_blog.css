@@ -1,0 +1,27 @@
+/*-------- приклад стилізації, файл не повний, лише деякі моменти ------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*padding не дасть вилізти за краї*/
+    text-decoration: none; /*скинути оформлення тексту*/
+    list-style-type: none; /*скинути оформлення списків*/
+}
+/*------------------ header -------------------------*/
+header{
+    height: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+
+}
+button{
+    background-color: black;
+    color: white;
+}
+body{
+    background-color: beige;
+}

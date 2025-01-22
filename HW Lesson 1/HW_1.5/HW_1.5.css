@@ -1,0 +1,25 @@
+*{
+    color: beige;
+}
+body{
+    background-image: url("img/back_bat.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 50px;
+}
+h2{
+    background-color: rgba(240, 128, 128, 0.47);
+}
+p, span{
+    font-size: 20pt;
+}
+span{
+    display: inline-block;
+    margin: 10px 20px 10px 50px;
+    font-style: italic;
+}
+img{
+    height:200px;
+    padding: 0 10px;
+}

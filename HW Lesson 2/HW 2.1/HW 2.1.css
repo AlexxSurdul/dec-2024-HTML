@@ -1,0 +1,29 @@
+body {
+    margin: 30px;
+}
+
+.text_string {
+    text-align: center;
+}
+
+.outer_fruit_box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inner_fruit_box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 15%;
+}
+
+.inner_fruit_box img {
+    width: 80%;
+    padding-top: 15px;
+}

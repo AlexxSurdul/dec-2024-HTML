@@ -1,0 +1,17 @@
+body{
+    margin: 100px 50px;
+}
+h2{
+    font-size: 20pt;
+    font-weight: lighter;
+}
+p{
+   display: inline-block;
+    background-color: rgba(211, 211, 211, 0.51);
+    font-size: 32pt;
+    margin: 0;
+    padding: 10px 20px 5px 20px;
+}
+span{
+    color: red;
+}

@@ -1,0 +1,21 @@
+@media screen and (min-width: 376px) and (max-width: 768px) {
+
+    section {
+        width: 768px;
+        padding: 48px 24px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    section > div {
+        gap: 24px;
+    }
+
+    section > div > div {
+        width: 348px;
+        height: 258px;
+
+    }
+
+
+}

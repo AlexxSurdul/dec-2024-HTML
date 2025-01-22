@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hover</title>
+    <style>
+        .wrapper {
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;/*перенос об'єктів, якщо контейнер переповнений*/
+        }
+
+        .item {
+            width: 200px;
+            height: 200px;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+            /*border-radius: 50%;*/
+            border-radius: 50px; /*заокруглення, якщо 50% то буде коло*/
+            border: 3px solid lightcoral; /*рамка навколо div: товщина тип колір*/
+            transition: 1s; /*плавність зміни відображення після прибирання курсора*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item a{
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+        .item:hover{
+            border-radius: 0;
+            border: 6px double blueviolet;
+            transition: 1s; /*плавність зміни відображення при наведенні курсора*/
+            /*width: 300px;*/
+            /*height: 300px;*/
+            transform: scale(1.1);
+        } /*дія при наведенні на елемент*/
+        .item:hover a{
+            color: blue;
+        }
+        /*a:hover{*/
+        /*    color: darkred;*/
+        /*    font-size: 150%;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--швидке присвоєння класів div.wrapper -> tab-->
+<div class="wrapper">
+    <div class="item">
+        <a href="#">link</a>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+</body>
+</html>

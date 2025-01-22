@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 100px;
+        }
+
+        .card {
+            width: 200px;
+            height: 250px;
+            background: lightslategrey;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .sale {
+            width: 70px;
+            height: 45px;
+            background: lightslategrey;
+            position: absolute;
+            top: -20px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .sale-bottom {
+            width: 70px;
+            height: 45px;
+            background: lightslategrey;
+            position: absolute;
+            bottom: -20px;
+            border-radius: 0 0 20px 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="card">
+        <div class="sale"></div>
+        <p>Lorem ipsum.</p>
+        <p>Consectetur, consequuntur.</p>
+        <p>Explicabo, ipsa.</p>
+        <div class="sale-bottom"></div>
+    </div>
+    <div class="card">
+        <div class="sale"></div>
+        <p>Lorem ipsum.</p>
+        <p>Consectetur, consequuntur.</p>
+        <p>Explicabo, ipsa.</p>
+        <div class="sale-bottom"></div>
+    </div>
+    <div class="card">
+        <div class="sale"></div>
+        <p>Lorem ipsum.</p>
+        <p>Consectetur, consequuntur.</p>
+        <p>Explicabo, ipsa.</p>
+        <div class="sale-bottom"></div>
+    </div>
+</div>
+</body>
+</html>

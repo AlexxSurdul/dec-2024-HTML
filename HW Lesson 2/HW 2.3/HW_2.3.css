@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: darkolivegreen;
+}
+
+.outer_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.upperbox {
+    margin: 40px 40px 5px 40px;
+}
+
+.lowerbox {
+    margin: 5px 40px 40px 40px;
+}
+
+.month_box {
+    width: 200px;
+    height: 170px;
+    background-color: #f1f8ea;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 3%;
+    padding: 10px;
+}
+.month_box:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+h3, p {
+    padding: 5px;
+}

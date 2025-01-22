@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.top-box {
+    width: 350px;
+    height: 380px;
+    margin-top: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 1px;
+}
+
+.top-box > img {
+    width: 180px;
+    margin: 10px auto;
+}
+
+.input-area {
+    width: 250px;
+    height: 33px;
+    margin-top: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 3px;
+    background-color: rgba(243, 243, 243, 0.71);
+    text-overflow: ellipsis;
+}
+
+.input-area::placeholder {
+    padding-left: 5px;
+    font-size: 11px;
+    color: rgba(128, 128, 128, 0.88);
+}
+
+#login {
+    width: 250px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #68b5fa;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.separator{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 250px;
+}
+.separator hr{
+    width: 85px;
+    border: 1px solid lightgray;
+}
+
+#login:active {
+    color: rgba(27, 60, 117, 0.93);
+}
+
+.top-box > div {
+    margin-top: 15px;
+}
+
+.top-box p {
+    color: rgba(53, 53, 53, 0.74);
+    font-size: 14px;
+}
+
+.login-fb {
+    margin-top: 25px;
+    color: #375185;
+    font-size: 14px;
+}
+
+.login-fb img {
+    margin-bottom: -5px;
+    margin-right: 3px;
+    width: 22px;
+}
+
+.reset-pass {
+    margin-top: 20px;
+    color: #164676;
+    font-size: 14px;
+}
+
+.bottom-box {
+    width: 350px;
+    height: 60px;
+    margin-top: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 1px;
+    font-size: 14px;
+    color: #353535;
+}
+
+.bottom-box a {
+    font-weight: bold;
+    color: #0495f6;
+
+}

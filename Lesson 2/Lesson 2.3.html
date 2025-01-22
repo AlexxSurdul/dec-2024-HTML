@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div</title>
+    <style>
+        * {
+            margin: 0
+        }
+
+        body {
+            /*height: 1000px;*/
+            height: 100vh; /*вьюпорти (vh) це % від висоти чи ширини видимої частини вікна в браузері, 100vh це один видимий екран*/
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            /*background-color: lightgreen;*/
+            margin: 0 10px; /*margin доступний завжди для відступів, на відміну від gap*/
+        }
+
+        .red {
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        .red p{                                  /*можна об'єднувати селектори*/
+            /*text-align: center; вирівнювання тексту*/
+
+        }
+        .red img{
+            width: 50%;
+
+        }
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .flexdiv {
+            height: 100%; /* буде рахуватись від компонента всередині якого він знаходиться, у нас це body*/
+            /*width: 100%; ширину можна не вказувати, вона буде по замовчуванню 100%*/
+            background-color: burlywood;
+            display: flex; /*вирівнювання елементів по горизонталі*/
+            /*justify-content: space-evenly; варіанти вирівнювання із заповненням простору*/
+            justify-content: center; /*центрування елементів по горизонталі*/
+            gap: 20px; /*такий як margin, але gap доступний лише для "display: flex" */
+            align-items: center; /*центрування елементів по вертикалі*/
+            flex-direction: revert /*напрямок розміщення елементів контейнера*/
+        }
+    </style>
+
+
+</head>
+<body>
+<div class="flexdiv">
+    <div class="box red">
+        <p>Lorem ipsum dolor.</p>
+        <img src="https://www.applesfromny.com/wp-content/uploads/2020/05/20Ounce_NYAS-Apples2.png" alt="apple">
+    </div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+</div>
+</body>
+</html>

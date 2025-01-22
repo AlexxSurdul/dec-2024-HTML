@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div-box {
+    margin: 2%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: dodgerblue;
+    height: 70vh;
+    font-size: 10vh;
+}
+
+.mid-widgets-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.5vh;
+}
+
+.mid-widgets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #304c71;
+    width: 32%;
+    height: 70vh;
+    font-size: 7vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: dodgerblue;
+    height: 150vh;
+    margin-top: 3.5vh;
+    font-size: 10vh;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.86);
+}

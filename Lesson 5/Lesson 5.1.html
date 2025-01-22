@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!--    <link rel="manifest" href="/site.webmanifest">-->
+    <style>
+        .pink-box {
+            width: 200px;
+            height: 200px;
+            background: blueviolet;
+            margin: 100px auto 0 auto;
+            animation: violet-animation 3s linear infinite alternate;
+            /*властивість для прив'язки анімації: назва анімації, час відтворення, тип відтворення. кількість повторів, параметр який робить повтор анімації плавним, типу як робить інверсію*/
+            /*animation: violet-animation 5s ease 2;*/
+            /*animation: violet-animation 5s ease-in 2;*/
+            /*animation: violet-animation 5s ease-out 2;*/
+        }
+
+        @keyframes violet-animation {
+            /*0%{            } можна вказувати % або замінити на from - to замість 0-100%*/
+            /*50%{            }*/
+            /*100%{            }*/
+            from {
+                /*transform: scale(1.5) rotate(60deg) skew(45deg);*/
+                /*transform: scale(1,2); !*якщо прописати через кому, то це буде 2 параметра*!*/
+                /*transform: scaleX(2); !*буде розтягуатись по осі Х в ширину, також працює з skew*!*/
+                /*transform: translateX(-250px) translateY(250px);*/
+                transform: translate(-250px, 250px); /*те ж саме, що і вище але без вказувангня Х У*/
+            }
+            40%{
+                /*border: 10px solid royalblue;*/
+                border-radius: 50%;
+                background: lightcoral;
+                /*transform: rotate(-60deg);*/
+            }
+            50%{
+                transform: skew(0deg) translateX(250px) translateY(250px);
+            }
+            to {
+                /*transform: scale(1) rotate(0deg);*/
+                background: seagreen;
+                transform: translateX(250px) translateY(-250px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="pink-box"></div>
+</body>
+</html>

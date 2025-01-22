@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*
+        Пріоритетність:
+        1000 балів - inline (вбудована стилізація в HTML тегу)
+        100 - id
+        10 - class
+        1 - tag
+        */
+        body p.lorem {
+            color: crimson;
+        }
+
+        /*тег body 1 бал + тег p 1 бал + клас lorem 10 = 12 балів*/
+        p.text {
+            color: blue;
+        }
+
+        /* тег + клас=11 балів*/
+        p {
+            color: coral;
+        }
+
+        /*тег=1 бал*/
+        section p.lorem {
+            color: cyan;
+        }
+
+        /*тег + тег + клас = 12 балів але спрацює те що нижче, якщо однакова сума балів*/
+        section div p.text{
+          color: coral;
+        } /*тег + тег + тег + клас = 13 балів*/
+        section div.box p.text{
+          color: greenyellow;
+        } /*тег + клас + клас = 21 бал*/
+    </style>
+</head>
+<body>
+<section>
+    <div class="box">
+        <p class="text lorem pink">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, voluptates.</p>
+    </div>
+</section>
+</body>
+</html>

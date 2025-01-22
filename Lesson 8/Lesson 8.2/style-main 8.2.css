@@ -1,0 +1,14 @@
+.item{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+}
+.item-1{
+    background: #6B6161;
+}
+.item-2{
+    background: #304c71;
+}
+.item-3{
+    background: rgba(118, 181, 172, 0.69);
+}

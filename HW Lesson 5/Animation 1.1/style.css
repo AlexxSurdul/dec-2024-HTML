@@ -1,0 +1,75 @@
+.animation-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    margin: 300px auto 0 auto;
+    /*background: grey;*/
+    animation: box-loader 5s ease infinite alternate;
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    animation: color-loader 5s linear infinite alternate;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+@keyframes box-loader {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color-loader {
+    0% {
+        transform: rotate(45deg);
+        border-radius: 10%;
+    }
+    25% {
+        transform: rotate(90deg);
+        border-radius: 20%;
+    }
+    50% {
+        transform: rotate(180deg);
+        border-radius: 30%;
+    }
+    75% {
+        transform: rotate(270deg);
+        border-radius: 40%;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}

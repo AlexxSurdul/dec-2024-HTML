@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: lightseagreen;
+}
+
+.form-window {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.header {
+    background: #eafdf7;
+    width: 100%;
+    height: 28%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.header h3 {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+}
+
+.input-area {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.input-area input {
+    display: block;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.84);
+    border-radius: 2px;
+}
+
+.input-area input::placeholder {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    color: rgba(127, 122, 122, 0.88);
+    padding-left: 1px;
+}
+
+.submit-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.submit-area label {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #353535;
+}
+
+.submit-area div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#login {
+    width: 80px;
+    height: 25px;
+    background: #eafdf7;
+    color: #353535;
+    border-radius: 7px;
+    border: 1px solid rgba(128, 128, 128, 0.84);
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+}

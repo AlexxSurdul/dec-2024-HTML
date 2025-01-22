@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer-box section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top-section{
+    height: 50vh;
+    background: lightpink;
+    font-size: 3vh;
+    text-align: center;
+}
+.bottom-section{
+    height: 50vh;
+    background: #252525;
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+}
+section p{
+    width: 85%;
+    margin: 30px;
+}

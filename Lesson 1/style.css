@@ -1,0 +1,46 @@
+body {
+    background-image: url("https://res.cloudinary.com/vistaprint/images/f_auto,q_auto/v1705580305/ideas-and-advice-prod/en-us/featured_14223857a51/featured_14223857a51.png?_i=AA");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+p {
+    color: coral;
+    /*font-size: 32px*/
+    width: 30%;
+    height: 50px;
+    /*background-color: lightgray;*/
+    /*display: inline-block;*/
+}
+
+h2, h3 {
+    color: blue;
+}
+
+sub {
+    font-size: 12px;
+    color: tan;
+}
+
+sup {
+    font-size: 75%;
+    color: mediumspringgreen;
+}
+
+span {
+    /*font-size: 40px;*/
+    color: cyan;
+    width: 30%;
+    height: 50px;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    /*зберігає пропорції картинки*/
+
+}
