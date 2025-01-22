@@ -11,11 +11,116 @@
     --Blue: #6246EA;
 }
 
-.general-wrapper{
+.general-wrapper {
     width: 1440px;
     height: 4792px;
     margin: 0 auto;
     background: #FFFFFE;
-    box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 2px rgba(209, 209, 209, 0.5);
+
+
+    position: relative;
+}
+
+/*----------------header-nav------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 86px;
+    flex-shrink: 0;
+    background: #EFF0F3;
+
+    /* For White Background */
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    position: fixed;
+}
+
+header h2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 194px;
+    height: 45px;
+    color: #001858;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 26px 150px 15px 95px;
+}
+
+header h2 span {
+    width: 48px;
+    height: 27px;
+    color: var(--Blue, #6246EA);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 756px;
+    height: 44px;
+    margin: 22px 95px 20px 150px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row;
+}
+
+nav li a {
+    color: var(--Black, #2B2C34);
+
+    /* 20 px - Sub Heading 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+nav li svg {
+    margin-right: 10px;
+}
+
+nav button {
+    display: flex;
+    padding: 10px 17px;
+    align-items: flex-start;
+    gap: 10px;
+    width: 213px;
+    height: 44px;
+    border-radius: 4px;
+    background: var(--Blue, #6246EA);
+    color: #FFFFFE;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+nav button:hover {
+    box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+nav button:active {
+    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+
 
 }
