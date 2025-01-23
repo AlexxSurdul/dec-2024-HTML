@@ -13,7 +13,7 @@
 
 .general-wrapper {
     width: 1440px;
-    height: 4792px;
+    height: 4878px;
     margin: 0 auto;
     background: #FFFFFE;
     box-shadow: 0 0 10px 2px rgba(209, 209, 209, 0.5);
@@ -126,4 +126,127 @@ nav button:active {
 }
 
 /*----------------main--------------------*/
+
+main {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background: #EFF0F3;
+    gap: 116px;
+}
+
+main div:first-child {
+    width: 664px;
+    height: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    margin: 271px 0 284px 95px;
+}
+
+main div:last-child {
+    width: 470px;
+    height: 387px;
+    display: flex;
+    padding: 12.874px 18.074px 10.757px 17.649px;
+    justify-content: center;
+    align-items: center;
+    margin: 250px 95px 263px 0;
+}
+
+main h1 {
+    width: 617px;
+    color: #2B2C34;
+
+    /* 64 px - Heading 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+main > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+main span {
+    width: 3px;
+    height: 56px;
+    border: 1.5px solid #2B2C34;
+    background: #2B2C34;
+}
+
+main p {
+    width: 652px;
+    color: var(--Dark-Grey, #9A9494);
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main form {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 609px;
+    height: 67px;
+
+}
+
+main form input:first-child {
+    width: 444px;
+    height: 67px;
+    display: flex;
+    padding: 21px 200px 21px 25px;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--White, #FFFFFE);
+}
+
+main form input::placeholder {
+    color: var(--Grey, #C0C0C0);
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main form input:last-child {
+    width: 145px;
+    height: 67px;
+    display: flex;
+    padding: 20px 23px 19px 23px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--Blue, #6246EA);
+    color: var(--White, #FFFFFE);
+
+    /* 20 px - Sub Heading 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*-------categories-section-------------------*/
 
