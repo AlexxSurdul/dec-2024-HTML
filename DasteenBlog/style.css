@@ -664,10 +664,24 @@ footer {
     line-height: normal;
 }
 
+/*пасхалка з фігми - прихований текст*/
 .underline-text p:last-child {
     position: relative;
     z-index: -1;
 }
 
 /*------scroll-icon----------*/
+/*пасхалка з фігми - іконка скролу*/
+.scroll-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: sticky;
+    margin: 0 auto;
+    top: 94vh;
+}
 
+.scroll-icon:hover {
+    transform: scale(2);
+    transition: 0.2s;
+}
