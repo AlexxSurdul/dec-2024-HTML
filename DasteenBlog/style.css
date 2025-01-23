@@ -13,7 +13,6 @@
 
 .general-wrapper {
     width: 1440px;
-    height: 4878px;
     margin: 0 auto;
     background: #FFFFFE;
     box-shadow: 0 0 10px 2px rgba(209, 209, 209, 0.5);
@@ -24,7 +23,6 @@
 
 header {
     display: flex;
-    /*justify-content: space-between;*/
     width: 1440px;
     height: 86px;
     flex-shrink: 0;
@@ -36,9 +34,6 @@ header {
 }
 
 header h2 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: flex-end;
     width: 194px;
     height: 45px;
     color: #001858;
@@ -115,12 +110,12 @@ nav button {
 
 /*--------buttons-style------------*/
 nav button:hover, article button:hover, main form input:last-child:hover, .subscribe-section form input:last-child:hover {
-    box-shadow: inset -1px -1px 5px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px -1px 5px 2px rgba(43, 43, 43, 1);
     transition: 0.2s;
 }
 
 nav button:active, article button:active, main form input:last-child:active, .subscribe-section form input:last-child:active {
-    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 1px 1px 5px 2px rgba(43, 43, 43, 1);
 }
 
 /*----------------main--------------------*/
@@ -310,14 +305,8 @@ main form input:last-child, .subscribe-section form input:last-child {
     justify-content: space-between;
     align-items: center;
     gap: 37px;
-    z-index: 1;
 }
 
-.dots-back-frame {
-    position: absolute;
-    background: rgba(179, 213, 208, 0.69);
-    z-index: -1;
-}
 
 .category-card {
     display: flex;
@@ -537,4 +526,148 @@ article button {
 }
 
 /*--------------footer----------------*/
+
+footer {
+    width: 1440px;
+    height: 435px;
+    flex-shrink: 0;
+    background: var(--Light-Grey-2, #E4E5E9);
+}
+
+.footer-top-wrapper {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 160px;
+    margin: 70px 96px 50px 95px;
+}
+
+.about-website {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    gap: 20px;
+}
+
+.about-website h5 {
+    width: 195px;
+    height: 45px;
+    color: #001858;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    gap: 2px;
+}
+
+.about-website h5 span {
+    width: 47px;
+    height: 27px;
+    color: var(--Blue, #6246EA);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about-website p {
+    width: 284px;
+    color: var(--Black, #2B2C34);
+
+    /* 18 px - Paragraph 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-website > div {
+    width: 190px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 95px;
+
+}
+
+.footer-link-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.footer-link p {
+    color: var(--Black, #2B2C34);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer-link-list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: var(--Black, #2B2C34);
+
+    /* 18 px - Paragraph 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-link-list a {
+    color: var(--Black, #2B2C34);
+
+    /* 18 px - Paragraph 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line-grey-footer {
+    width: 1250px;
+    height: 1px;
+    background: #C0C0C0;
+    margin: 0 auto;
+}
+
+.underline-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px 95px;
+    color: var(--Black, #2B2C34);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.underline-text p:last-child {
+    position: relative;
+    z-index: -1;
+}
+
+/*------scroll-icon----------*/
 
