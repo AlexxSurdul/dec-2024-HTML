@@ -1,6 +1,3 @@
-/*font-family: "Plus Jakarta Sans", serif;*/
-
-
 :root {
     --White: #FFFFFE;
     --Light-Grey-1: #EFF0F3;
@@ -75,6 +72,9 @@ nav ul {
 }
 
 nav li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--Black, #2B2C34);
 
     /* 20 px - Sub Heading 2 */
