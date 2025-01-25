@@ -499,7 +499,12 @@ article button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    /*gap: 30px;*/
+}
+
+.mailbox-icon {
+    width: 130px;
+    height: 130px;
 }
 
 .subscribe-section h5 {
@@ -510,13 +515,15 @@ article button {
     font-weight: 700;
     line-height: normal;
     text-transform: capitalize;
+    margin-top: 30px;
 }
 
 .subscribe-section p {
     width: 696px;
     color: var(--Grey, #C0C0C0);
     text-align: center;
-
+    margin-top: 10px;
+    margin-bottom: 30px;
     /* 20 px - Paragraph 1 */
     font-family: "Plus Jakarta Sans", serif;
     font-size: 20px;
